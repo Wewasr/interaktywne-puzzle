@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Interaktywne Puzzle - Jaś i Małgosia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sekcja powitalna -->
+    <div id="welcome-screen">
+        <h2>Witaj w grze!</h2>
+        <p>Podaj swoje imię i wiek, aby rozpocząć:</p>
+        <input type="text" id="player-name" placeholder="Twoje imię">
+        <input type="number" id="player-age" placeholder="Twój wiek">
+        <button id="start-game-button">Rozpocznij grę</button>
+    </div>
+
+    <!-- Kontener gry -->
+    <div id="game-container" style="display: none;">
+        <h1 id="game-title">Interaktywne Puzzle - Jaś i Małgosia</h1>
+
+        <!-- Kontener na ułożenie puzzli -->
+        <div id="puzzle-container"></div>
+
+        <!-- Kontener z kawałkami puzzli -->
+        <div id="pieces-container"></div>
+
+        <!-- Przycisk "Spróbuj ponownie" -->
+        <button id="retry-button" style="display: none;">Spróbuj ponownie</button>
+    </div>
+
+    <!-- Podłączenie skryptu JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
